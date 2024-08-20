@@ -1,10 +1,33 @@
 .section {
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 0 40px;
 }
 
+.frag-header {
+
+    font-size: 32px !important;
+    font-weight: 700 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    min-height: 120px;
+}
+
+.b-cta {
+
+    padding: 11px 12px;
+    background-color: #7da464;
+    border: none;
+    cursor: pointer;
+    color: white !important;
+}
+
+#get-cat {
+
+    margin-top: 25px;
+}
+
+/*
 .logo-section {
 
     margin-top: 55px;
@@ -55,4 +78,4 @@
 
     margin: 0;
     margin-top: 18px;
-}
+} */

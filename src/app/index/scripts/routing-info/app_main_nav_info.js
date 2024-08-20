@@ -4,14 +4,14 @@ import MainNavigationInfoBuilder from "oats-i/router/utils/nav-info/main_nav_inf
 const AppMainNavInfo = MainNavigationInfoBuilder.buildMainNavigationInfo([
 
     {
-        selector: "home-link",
+        selector: "http-cats-link",
         defaultRoute: "/",
         baseActiveRoute: "/",
     },
     {
-        selector: "about-link",
-        defaultRoute: "/about",
-        baseActiveRoute: "/about",
+        selector: "movies-link",
+        defaultRoute: "/movies",
+        baseActiveRoute: "/movies",
     }
 ]);
 

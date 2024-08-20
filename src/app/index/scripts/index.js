@@ -6,7 +6,7 @@ import MainRouter from "oats-i/router/main_router";
 import AppMainNavInfo from "./routing-info/app_main_nav_info";
 
 //import styles
-import "../styles/index_responsive.css";
+import "../styles/index.css";
 
 function initApp(){
 

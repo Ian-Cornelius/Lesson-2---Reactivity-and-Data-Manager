@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Mulish:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Mulish:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /* Crucial styling to allow specially structured A links to still have clicks intercepted by router. */
 /* Carry over to your project */
@@ -11,64 +10,113 @@ a *:not([click-override=true]){
 body {
 
     margin: 0;
-    background-color: #b1d4e0;
+    background-color: white;
     box-sizing: border-box;
     overflow-x: hidden;
-    --body-padding: 44px;
+    --body-padding: 24px;
+    --color-primary: #6b929a;
 }
 
-.archivo-txt {
+.mont-txt {
 
-    font-family: "Archivo Black", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #051d40;
-    text-align: center;
+    color: black;
     margin: 0;
-}
-
-.open-sans-txt {
-
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-size: 14px;
-  color: #051d40;
-  text-align: center;
-  margin: 0;
+    font-size: 16px;
 }
 
 #my-app {
 
     position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr;
 }
 
 #nav {
 
-    padding: 16px var(--body-padding);
     box-sizing: border-box;
+    height: 100lvh;
+    background: var(--color-primary);
+    min-width: 332px;
+    width: max-content;
+}
+
+#logo {
+
+    padding-left: var(--body-padding);
+    min-height: 120px;
+    width: 100%;
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: end;
-    gap: 24px;
+}
+
+#logo::before {
+
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    z-index: 20;
-    background: rgba(177,212,224, .8)
+    height: 3px;
+    background-color: white;
+}
+
+#logo > p {
+
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+#logo > p > span {
+
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    border: 1px white solid;
+    background-color: #486970;
+    border-radius: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#links {
+
+    margin: 40px var(--body-padding);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .nav-link {
 
     text-decoration: none;
-    color: #2e4c57;
+    color: black;
     font-weight: 400;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
+.nav-link[navigation-state=active] {
+
+    font-weight: 700;
+    color: white;
+}
+
+.nav-link[navigation-state=active]::before {
+
+    content: "~ ";
+}
+
+/*
 .nav-link > span:nth-of-type(1) {
 
     display: none;
@@ -106,4 +154,4 @@ main-fragment {
 
     padding: 0 var(--body-padding);
     box-sizing: border-box;
-}
+} */
