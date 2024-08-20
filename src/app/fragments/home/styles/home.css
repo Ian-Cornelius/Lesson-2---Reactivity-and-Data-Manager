@@ -1,0 +1,58 @@
+.section {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-section {
+
+    margin-top: 55px;
+}
+
+.oats_i_logo_icon {
+
+    width: 142px;
+    object-fit: contain;
+}
+
+.logo-name {
+
+    font-size: 79px;
+    margin: 0;
+}
+
+.logo-byline {
+
+    margin: 0;
+}
+
+.page-content {
+
+    margin: 84px 0;
+}
+
+.content-header {
+
+    font-weight: 700;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.content-header > span:not(:nth-of-type(2)) {
+
+    display: inline-block;
+    width: 4px;
+    height: 29px;
+    background: url("../assets/line_separator_normal.svg") no-repeat;
+    background-size: contain;
+}
+
+.page-content > p:first-of-type {
+
+    margin: 0;
+    margin-top: 18px;
+}

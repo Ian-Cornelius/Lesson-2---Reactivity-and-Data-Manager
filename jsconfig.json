@@ -1,0 +1,9 @@
+// Configuring to access types better
+{
+    "include": [
+        "*/**/*.js",
+        "**/*",
+        "/**/*",
+        "node_modules/oats-i" //to get type definitions for oats-i in your project - and allow me to write without strict typescript
+    ],
+}

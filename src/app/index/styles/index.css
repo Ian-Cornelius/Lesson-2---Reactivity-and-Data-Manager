@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Mulish:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Mulish:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Crucial styling to allow specially structured A links to still have clicks intercepted by router. */
+/* Carry over to your project */
+a *:not([click-override=true]){ 
+    
+    pointer-events: none 
+}
+
+body {
+
+    margin: 0;
+    background-color: #b1d4e0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    --body-padding: 44px;
+}
+
+.archivo-txt {
+
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #051d40;
+    text-align: center;
+    margin: 0;
+}
+
+.open-sans-txt {
+
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 14px;
+  color: #051d40;
+  text-align: center;
+  margin: 0;
+}
+
+#my-app {
+
+    position: relative;
+}
+
+#nav {
+
+    padding: 16px var(--body-padding);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 24px;
+    width: 100%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(177,212,224, .8)
+}
+
+.nav-link {
+
+    text-decoration: none;
+    color: #2e4c57;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-link > span:nth-of-type(1) {
+
+    display: none;
+}
+
+.nav-link:hover,
+.nav-link[navigation-state=active] {
+
+    font-weight: 700;
+}
+
+.nav-link[navigation-state=active] > span:nth-of-type(1) {
+
+    display: inline-block;
+    background: url("../assets/oats_i_logo_icon.svg") no-repeat;
+    background-size: contain;
+    height: 19px;
+    width: 19px;
+    margin-right: 8px;
+}
+
+#site-bg {
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 58.5%;
+    background: url("../assets/bg_rings.svg") no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+
+main-fragment {
+
+    padding: 0 var(--body-padding);
+    box-sizing: border-box;
+}
