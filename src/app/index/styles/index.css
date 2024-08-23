@@ -41,6 +41,9 @@ body {
     background: var(--color-primary);
     min-width: 332px;
     width: max-content;
+    /*Lesson 2 fix*/
+    position: sticky;
+    top: 0;
 }
 
 #logo {
