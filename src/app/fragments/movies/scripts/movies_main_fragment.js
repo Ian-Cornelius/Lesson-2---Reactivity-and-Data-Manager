@@ -194,6 +194,7 @@ class MoviesMainFragment extends AppMainFragment{
     getMovie(e){
 
         e.preventDefault();
+        //@
         const title = document.getElementById("movie-search").value;
         if(title){
 

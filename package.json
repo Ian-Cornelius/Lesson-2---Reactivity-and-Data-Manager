@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "oats-i": "^0.7.1"
+    "oats-i": "^0.7.4"
   },
   "devDependencies": {
     "babel-loader": "^9.1.3",
